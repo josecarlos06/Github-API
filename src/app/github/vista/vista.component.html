@@ -1,0 +1,13 @@
+<div class="card" *ngIf="result.name">
+    <figure class="figure">
+        <img
+        [src]="result.avatar_url"
+        >
+        <figcaption class="figure__name">
+            <h2 class="title">{{result.name}}</h2>
+        </figcaption>
+    </figure>
+    <p class="paragraph">{{result.bio}}</p>
+    <p class="paragraph">Seguidores {{result.followers}}</p>
+    <a [href]="result.blog" target="_blank" class="link">Sitio web</a>
+</div>

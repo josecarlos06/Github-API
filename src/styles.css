@@ -1,1 +1,89 @@
-/* You can add global styles to this file, and also import other style files */
+:root{
+	--blue:#161B22;
+	--blanco:#fff;
+	--green:#3FB950;
+	--negro:#000;
+}
+*{
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+img{
+	width:100%;
+	height:100%;
+	object-fit: cover;
+	display: block;
+}
+body{
+	background:var(--blue);
+	font-family: 'Poppins', sans-serif;
+	font-size:1.1rem;
+}
+.container{
+	max-width:1200px;
+	margin: 0 auto;
+	width:90%;
+}
+.campo{
+	display:flex;
+	padding:.5rem;
+	background:var(--blanco);
+	border-radius:.2rem;
+	margin-top:2rem;
+}
+.input-busqueda{
+	width:100%;
+	padding:.5rem .5rem;
+	font-size:1rem;
+	border: none;
+	outline: none;
+}
+.buscar{
+	padding:.5rem 1rem;
+	border: none;
+	background: var(--green);
+	color: var(--blanco);
+	font-size:1rem;
+	font-weight: bold;
+	border-radius:.2rem;
+	transition: background .4s;
+}
+.buscar:hover{
+	background: #4ad85d;
+}
+.paragraph{
+	color: var(--negro);
+	padding-bottom:.5rem;
+}
+.card{
+	display:flex;
+	flex-direction: column;
+	box-shadow: 0px 0px 12px 1px #2c3442;
+	max-width:20rem;
+	margin: 0 auto;
+	margin-top:3rem;
+	padding:.5rem;
+	background:var(--blanco);
+	border-radius:.2rem;
+}
+.figure{
+	position: relative;
+}
+.figure__name{
+	position: absolute;
+	top: 0;
+	left: -1rem;
+	background:var(--green);
+	border-radius:.2rem .01rem .01rem .2rem;
+}
+.figure__name .title{
+	padding:.5rem;
+	color: var(--blanco);
+	font-size:.9rem;
+}
+.link{
+	text-decoration: none;
+	color: var(--green);
+	font-weight: bold;
+}
